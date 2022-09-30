@@ -1,0 +1,25 @@
+﻿/*
+    Nombre: Benjamin Ramirez Bolaños
+    Grupo: GDGS2101 
+*/
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FollowPlayerX : MonoBehaviour
+{
+    public GameObject plane;
+    private Vector3 offset = new Vector3(20,2,0); //Establecer el vector en una posicion correcta
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.position = plane.transform.position + offset; //Posicionar para que la camara siga a el avion
+    }
+}
